@@ -1,0 +1,204 @@
+
+@font-face {
+  font-family: "Simplon Norm";
+  src: url("https://db.onlinewebfonts.com/t/ca671f001f1c1ac07ba12ef439e7e65a.eot");
+  src: url("https://db.onlinewebfonts.com/t/ca671f001f1c1ac07ba12ef439e7e65a.eot?#iefix")format("embedded-opentype"),
+  url("https://db.onlinewebfonts.com/t/ca671f001f1c1ac07ba12ef439e7e65a.woff2")format("woff2"),
+  url("https://db.onlinewebfonts.com/t/ca671f001f1c1ac07ba12ef439e7e65a.woff")format("woff"),
+  url("https://db.onlinewebfonts.com/t/ca671f001f1c1ac07ba12ef439e7e65a.ttf")format("truetype"),
+  url("https://db.onlinewebfonts.com/t/ca671f001f1c1ac07ba12ef439e7e65a.svg#Simplon Norm")format("svg");
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 8%;
+  font-family: 'Simplon Norm', Arial, Helvetica, sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo {
+  width: 25%;
+}
+
+.title {
+  text-align: center;
+  flex-grow: 1;
+  width: 50%;
+}
+
+.app-title {
+  font-weight: 800;
+  font-size: 36px;
+  color: #000000;
+  font-family: 'Simplon Norm', Arial, Helvetica, sans-serif;
+}
+
+.icons {
+  display: flex;
+  gap: 20px;
+  width: 25%;
+  justify-content: end;
+  align-items: center;
+}
+
+.nav {
+  padding: 10px 0;
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.nav ul {
+  display: flex;
+  gap: 64px;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.nav li {
+  margin: 0 15px;
+  cursor: pointer;
+  font-size: 20px;
+  color: #252020;
+  font-weight: 700;
+}
+
+.discover-products {
+  text-align: center;
+  padding: 30px 0;
+}
+
+.discover-products h2 {
+  font-size: 60px;
+  color: #252020;
+  font-weight: 400;
+}
+
+.product-description {
+  font-size: 22px;
+  color: #252020;
+  line-height: 40px;
+  padding: 0 28%;
+}
+
+.productListing {
+  padding: 20px 0;
+}
+
+.productHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0;
+  border-top: 1px solid #E5E5E5;
+  border-bottom: 1px solid #E5E5E5;
+  margin-bottom: 20px;
+}
+
+.items-count {
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+}
+
+.filter-box {
+  color: #888792;
+  font-size: 16px;
+  text-decoration: underline;
+}
+
+.filter-box svg {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.productHeader span {
+  font-weight: bold;
+}
+
+.productHeader .dropdown {
+  margin-left: 10px;
+  padding: 5px;
+  border-radius: 4px; /* Optional: rounded corners */
+}
+
+.filterAndProducts {
+  display: flex;
+  gap: 16px;
+}
+
+.filters {
+  flex: 1;
+  background-color: #f0f0f0;
+  padding: 15px;
+}
+
+.productGrid {
+  flex: 3;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.productCard {
+  text-align: center;
+  border: 1px solid #E5E5E5;
+  padding: 0 10px;
+}
+
+.productName {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 10px 0;
+  white-space: nowrap;       
+  overflow: hidden;           
+  text-overflow: ellipsis;   
+  width: 200px;  
+}
+
+.description{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.heartIcon {
+  cursor: pointer;
+  font-size: 24px;
+}
+
+
+.flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+
+/* Responsive styles for mobile view */
+@media (max-width: 768px) {
+  .productGrid {
+    grid-template-columns: repeat(2, 1fr); /* Two products per row on mobile */
+  }
+
+  .filterAndProducts {
+    flex-direction: column; /* Stack filters and products */
+  }
+
+  .productHeader {
+    flex-direction: column; /* Stack header items */
+    align-items: flex-start; /* Align items to the left */
+  }
+
+  .productHeader select {
+    margin-top: 10px; /* Space between count and dropdown */
+  }
+}

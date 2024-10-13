@@ -1,0 +1,48 @@
+.filter-leftnav {
+  width: 20%;
+  padding: 10px;
+}
+
+.filter-section {
+  margin-bottom: 15px;
+}
+
+.section-header {
+  font-weight: bold;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+.section-header h4 {
+  font-size: 18px;
+  color: #252020;
+  margin: 0px;
+}
+
+.section-content {
+  padding: 10px;
+}
+
+.all {
+  margin: 10px 0px;
+  cursor: pointer;
+}
+
+.unselect-all {
+  margin: 20px 0px;
+  text-decoration: underline;
+  color: #BFC8CD;
+  cursor: pointer;
+}
+
+.checkbox-option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.checkbox-option input {
+  margin-right: 10px;
+  cursor: pointer;
+}
